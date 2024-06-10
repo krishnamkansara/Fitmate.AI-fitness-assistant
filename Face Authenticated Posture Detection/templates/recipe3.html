@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>Recipe 1</title>
+<style>
+    .container {
+        text-align: center; /* Center align the content */
+    }
+
+    .recipe-image {
+        max-width: 200px; /* Set a fixed maximum width for the image */
+        display: block; /* Center the image */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .recipe-info {
+        max-width: 600px; /* Set max width for the text box */
+        margin: 0 auto; /* Center the text box horizontally */
+        text-align: left; /* Left align the text */
+        padding: 20px; /* Add padding to the text box */
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 5px; /* Add border radius */
+        background-color: #f9f9f9; /* Light gray background color */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="{{ url_for('static', filename='img/food3.jpg') }}" alt="Recipe 3" class="recipe-image">
+        
+        <!-- Recipe Information -->
+        <div class="recipe-info">
+            <h2>Weight Loss:</h2><br>
+            <p>Early morning (6:45 AM TO 7:00 AM):</p>
+            <p> 1 cup of green tea + 5-6 soaked almonds .</p><br>
+            <p>Breakfast (8:30 AM TO 9:00 AM):</p>
+            <p>1 cup of oats with skimmed milk and fruits.</p><br>
+            <p>Lunch (1:00 PM to 2:00 PM):</p>
+            <p>3 egg whites, 1 whole onion, 1 egg, carrot, and cabbage Mixed salad.</p><br>
+            <p>Before Workout (6:00 PM to 6:30 PM): </p>
+            <p>Black coffee + 1 apple/banana + 1 bowl sprouts (mung).h</p><br>
+            <p>After workout (8:00 PM): </p>
+            <p>Isopure Whey protein powder in water + 10 Almonds + 4 Walnuts.</p><br>
+            <p>Dinner(9:00 PM to 9:30 PM):</p>
+            <p>1 Bajra Roti + 100 gm Paneer</p>
+              
+           
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="signin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/88e649d78c.js" crossorigin="anonymous"></script>
+    <title>Fitmate.ai/SignIn Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="logo" class="logo">
+            <a class="logo-text">FitMate.ai</a>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html"><button type="button">HOME</button></a></li>
+                    <li><a href="getfit.html"><button type="button">GET BETTER</button></a></li>
+                    <li><a href="contact.html"><button type="button">CONTACT</button></a></li>
+                    <li><a href="eatbetter.html"><button type="button">EAT BETTER</button></a></li>
+                    <li><a href="portfolio.html"><button type="button">PORTFOLIO</button></a></li>
+                </ul>
+            </nav>
+            <a href="myprofile.html"><img src="{{ url_for('static', filename='img/profile3.png') }}" alt="logo" class="profile-icon"></a>
+
+            
+
+
+
+        </div>
+    </div>
+
+      <div class="form-box">
+        <h1 id="title">Sign In</h1>
+         <form action="signin.php" method="post">
+            <div class="input-grp">
+                <div class="input-field" id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" placeholder="email" required>
+                </div>
+                <div class="input-field" id="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+                <p>Forget Password <a href="#">Click here!</a></p>
+            </div>
+            <div class="btn-field">
+                <a href="signin.html"><button type="submit" id="signinBtn">SignIn</button></a> 
+               <a href="signUp.html"><button type="button" id="signupBtn">SignUp</button></a> 
+            </div>
+         </form>
+        
+       
+
+    </div>
+<script>
+    let signinBtn=document.getElementById("signinBtn");
+    let signupBtn=document.getElementById("signupBtn");
+    let namefield=document.getElementById("namefield");
+    let title=document.getElementById("title");
+
+</script>
+
+
+</body>
+
+</html>

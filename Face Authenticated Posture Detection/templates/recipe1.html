@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>Recipe 1</title>
+<style>
+    .container {
+        text-align: center; /* Center align the content */
+    }
+
+    .recipe-image {
+        max-width: 200px; /* Set a fixed maximum width for the image */
+        display: block; /* Center the image */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .recipe-info {
+        max-width: 600px; /* Set max width for the text box */
+        margin: 0 auto; /* Center the text box horizontally */
+        text-align: left; /* Left align the text */
+        padding: 20px; /* Add padding to the text box */
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 5px; /* Add border radius */
+        background-color: #f9f9f9; /* Light gray background color */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="{{ url_for('static', filename='img/food1.jpg') }}" alt="Recipe 1" class="recipe-image">
+        
+        <!-- Recipe Information -->
+        <div class="recipe-info">
+            <h2>Weight Gain:</h2><br>
+            <p>Early morning (6:45 AM TO 7:00 AM):</p>
+            <p> Green juice made with lemon, ginger, cucumber, and mint.</p><br>
+            <p>Breakfast (8:30 AM TO 9:00 AM):</p>
+            <p>Smoothie with 40gm rolled oats, 1 tbsp chia seeds, 1 cup whey protein, 1 small banana, a pinch of cinnamon powder, 250ml milk, 7 almonds, and 3 walnuts.</p><br>
+            <p>Lunch (1:00 PM to 2:00 PM):</p>
+            <p>100gm brown rice (1 cup) + 100gm pumpkin + 200gm curd.</p><br>
+            <p>Before Workout (6:00 PM to 6:30 PM): </p>
+            <p>Oatmeal + Dried fruits</p><br>
+            <p>After workout (8:00 PM): </p>
+            <p>Isopure Whey protein powder in water + 10 Almonds + 4 Walnuts.</p><br>
+            <p>Dinner(9:00 PM to 9:30 PM):</p>
+            <p>3 Egg Whites, 1 Whole Egg + Sautéed vegetables (capsicum, bell pepper, broccoli, onions, tomato).</p>
+              
+           
+        </div>
+    </div>
+</body>
+</html>

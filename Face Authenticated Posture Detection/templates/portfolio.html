@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Fitmate.ai/Portfolio page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="logo" class="logo">
+            <a class="logo-text">FitMate.ai</a>
+
+            <nav>
+
+                <ul>
+                    <!-- Update links for Flask routing -->
+                    <li><a href="{{ url_for('home') }}"><button type="button">HOME</button></a></li>
+                    <li><a href="{{ url_for('get_fit') }}"><button type="button">GET BETTER</button></a></li>
+                    <li><a href="{{ url_for('contact') }}"><button type="button">CONTACT</button></a></li>
+                    <li><a href="{{ url_for('eat_better') }}"><button type="button">EAT BETTER</button></a></li>
+                    <li><a href="{{ url_for('portfolio') }}"><button type="button">PORTFOLIO</button></a></li>
+                </ul>
+            </nav>
+            <a href="{{ url_for('my_profile') }}"><img src="{{ url_for('static', filename='img/profile3.png') }}" alt="logo" class="profile-icon"></a>
+
+
+        </div>
+        <img src="{{ url_for('static', filename='img/portfolio_img.png') }}" alt="">
+
+    </div>
+
+</body>
+
+</html>

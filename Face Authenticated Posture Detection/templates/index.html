@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Update CSS link -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Fitmate.ai/Home page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <!-- Update image source -->
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="logo" class="logo">
+            <a class="logo-text">FitMate.ai</a>
+
+            <nav>
+                <ul>
+                    <!-- Update links for Flask routing -->
+                    <li><a href="{{ url_for('home') }}"><button type="button">HOME</button></a></li>
+                    <li><a href="{{ url_for('get_fit') }}"><button type="button">GET BETTER</button></a></li>
+                    <li><a href="{{ url_for('contact') }}"><button type="button">CONTACT</button></a></li>
+                    <li><a href="{{ url_for('eat_better') }}"><button type="button">EAT BETTER</button></a></li>
+                    <li><a href="{{ url_for('portfolio') }}"><button type="button">PORTFOLIO</button></a></li>
+                </ul>
+            </nav>
+            <a href="{{ url_for('my_profile') }}"><img src="{{ url_for('static', filename='img/profile3.png') }}" alt="logo" class="profile-icon"></a>
+        </div>
+
+        <div class="row1">
+            <p>Welcome to our FitMate.ai – Your Gateway to a Healthier You!</p>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <p>🏋‍♂ Discover Your Fitness Journey:</p>
+                <p>Embark on a transformative adventure towards a healthier lifestyle with our user-friendly fitness website. Whether you're a seasoned gym enthusiast or just starting your fitness journey, our platform is designed to cater to all levels of expertise.<br></p>
+                
+                <p>🏃‍♀ Personalized Fitness Plans:</p>
+                <p>Tailor your workout routines to meet your specific goals. Our fitness website provides personalized plans crafted by certified trainers, ensuring a program that aligns with your fitness aspirations and caters to your unique body needs.</p>
+
+                <p>🍏 Nutrition Guidance:</p>
+                <p>Achieve holistic wellness with expert nutritional guidance. Access nutrition plans curated to complement your fitness routine, promoting a balanced and sustainable approach to healthy living.</p>
+            </div>
+            <div class="col2">
+                <!-- Update video source -->
+                <video controls src="{{ url_for('static', filename='img/demo.mp4') }}" width="400"></video>
+                <div>
+                    <a href="{{ url_for('sign_in') }}"><button type="button">SignIn</button></a>
+                    <a href="{{ url_for('sign_up') }}"><button type="button">SignUp</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

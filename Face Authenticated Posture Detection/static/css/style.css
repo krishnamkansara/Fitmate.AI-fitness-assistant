@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto',sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    height: 140vh;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/bg5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.profile-icon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+
+
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.logo-text{
+    padding-left: 1%;
+    padding-top: 2.5%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.row1 p{
+    text-align: center;
+    color: #c3c3c3;
+    font-size: 25px;
+    font-style: bold;
+
+}
+.row{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+.col1{
+    flex-basis: 50%;
+    color: #c0c0c0;
+}
+.col2{
+    padding-left:9% ;
+    padding-top: 9%;
+}
+button{
+    width: 90px;
+    padding: 8px 0;
+    text-align: center;
+    margin: 15px 2px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: black;
+}

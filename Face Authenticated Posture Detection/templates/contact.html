@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact-style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Fitmate.ai/Getfit page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container2 {
+            max-width: 500px;
+            margin-top: 10%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        .container2 textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .container2 button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="logo" class="logo">
+            <a class="logo-text">FitMate.ai</a>
+
+            <nav>
+
+                <ul>
+                    <!-- Update links for Flask routing -->
+                    <li><a href="{{ url_for('home') }}"><button type="button">HOME</button></a></li>
+                    <li><a href="{{ url_for('get_fit') }}"><button type="button">GET BETTER</button></a></li>
+                    <li><a href="{{ url_for('contact') }}"><button type="button">CONTACT</button></a></li>
+                    <li><a href="{{ url_for('eat_better') }}"><button type="button">EAT BETTER</button></a></li>
+                    <li><a href="{{ url_for('portfolio') }}"><button type="button">PORTFOLIO</button></a></li>
+                </ul>
+            </nav>
+            <a href="{{ url_for('my_profile') }}"><img src="{{ url_for('static', filename='img/profile3.png') }}" alt="logo" class="profile-icon"></a>
+
+
+        </div>
+        <div class="container2">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
